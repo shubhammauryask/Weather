@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bakgroundweather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:text="Weather Report"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+           android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:textColorHint="@color/black"
+                android:id="@+id/cityName"
+                android:hint="City Name"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:text="SEARCH"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/btnSearch"
+            android:textColor="@color/black"
+            app:backgroundTint="#BC56EAD8"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="380dp"
+       android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="KANPUR"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_height="35dp"/>
+        <TextView
+            android:id="@+id/timeshow"
+            android:layout_width="match_parent"
+            android:text="04:53 pm"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="60dp"
+                    android:text="27"
+                    android:id="@+id/tempshow"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="10dp"
+                    android:text="."
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="30dp"
+                    android:text="C"
+                    android:textSize="25dp"
+                    android:layout_marginTop="45dp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageWeather"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/images"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvCloud"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Partly Cloudy"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/tvWind"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Wind: 90 mph"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Humadity:53%"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:layout_height="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+</com.google.android.material.circularreveal.CircularRevealLinearLayout>
